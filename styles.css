@@ -1,0 +1,146 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(90deg, #000428, #004e92); /* Dark blue gradient */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+/* Header left with portfolio name */
+.logo h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+nav ul li a:hover {
+  color: #00d4ff;
+}
+
+/* Hero Section (Home) */
+#home {
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  background: url('computer-image.jpg') no-repeat center center/cover; /* Background image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  z-index: 10;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adds shadow for better readability */
+}
+
+/* About Me Section */
+#aboutme .content {
+  padding: 100px 20px;
+  background: #1f1c2c; /* Simple dark background */
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.project {
+  margin: 20px 0;
+  padding: 20px;
+  background: #333;
+  border-radius: 10px;
+}
+
+.project a {
+  color: #00d4ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Contact Section */
+#contact .content {
+  padding: 50px 20px;
+  background: #1f1c2c;
+  text-align: center;
+}
+
+#contact p {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+#contact a {
+  color: #00d4ff;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1f1c2c;
+  color: white;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .hero-text {
+    font-size: 2rem;
+  }
+
+  .logo h1 {
+    font-size: 1.2rem;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;
+  }
+}
